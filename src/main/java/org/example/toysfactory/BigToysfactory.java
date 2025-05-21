@@ -15,7 +15,6 @@ public class BigToysfactory {
     public  void  addLutin(Observer observer){
         this.lutins.add(observer);
     }
-//    Lutin lutin = new Lutin("lulu");
 
     public void notifLutin (){
         for (Observer observer : lutins){
@@ -23,7 +22,20 @@ public class BigToysfactory {
         }
     }
 
-    private Map<String,ToysFactory> toysMap = new HashMap<>();
+    public void makeLutin() {
+        for (Observer observer : lutins) {
+            observer.makeGift();
+        }
+    }
+
+    public  void buyLutin() {
+        for (Observer observer : lutins) {
+            observer.buyTimbre();
+        }
+    }
+
+
+        private Map<String,ToysFactory> toysMap = new HashMap<>();
 
     public void setToysMap(String typeFacto, ToysFactory factory) {
         toysMap.put(typeFacto,factory);

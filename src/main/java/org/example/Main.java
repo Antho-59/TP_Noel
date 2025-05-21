@@ -10,6 +10,8 @@ public class Main {
     public static void main(String[] args) {
 
         Lutin lutin = new Lutin("lulu");
+        Lutin lutin2 = new Lutin("lala");
+        Lutin lutin3 = new Lutin("lolo");
 
 
         ToysFactory carFactory = new CarFactory();
@@ -23,7 +25,11 @@ public class Main {
 
         Toys doll = bigToysfactory.buildtoys("poupée");
         doll.description();
-        lutin.notif();
+
+        lutin.notif(); // notifie un lutin
+        lutin2.buyTimbre(); // le lutin va chercher des timbres
+        lutin3.makeGift(); // le lutin prepare le cadeau/colis
+
 
 
         Toy baseGift = new PlainToy();

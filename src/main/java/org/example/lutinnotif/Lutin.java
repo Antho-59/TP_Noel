@@ -13,4 +13,14 @@ public class Lutin implements Observer{
         System.out.println(name+ " notif : un cadeau a été fabriqué");
 
     }
+
+    @Override
+    public void makeGift() {
+        System.out.println(name+ " va preparer un colis");
+    }
+
+    @Override
+    public void buyTimbre() {
+        System.out.println(name+" va acheter un timbre");
+    }
 }
