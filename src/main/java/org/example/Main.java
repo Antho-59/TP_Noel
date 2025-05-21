@@ -9,8 +9,8 @@ import org.example.toysfactory.*;
 public class Main {
     public static void main(String[] args) {
 
-//        Lutin lutin = new Lutin("lulu");
-//        lutin.notif();
+        Lutin lutin = new Lutin("lulu");
+
 
         ToysFactory carFactory = new CarFactory();
         Toys car = carFactory.createToys();
@@ -23,6 +23,7 @@ public class Main {
 
         Toys doll = bigToysfactory.buildtoys("poupée");
         doll.description();
+        lutin.notif();
 
 
         Toy baseGift = new PlainToy();

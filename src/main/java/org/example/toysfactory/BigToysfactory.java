@@ -15,7 +15,7 @@ public class BigToysfactory {
     public  void  addLutin(Observer observer){
         this.lutins.add(observer);
     }
-    Lutin lutin = new Lutin("lulu");
+//    Lutin lutin = new Lutin("lulu");
 
     public void notifLutin (){
         for (Observer observer : lutins){
@@ -32,7 +32,7 @@ public class BigToysfactory {
     public Toys buildtoys(String typeToys){
         ToysFactory factory = toysMap.get(typeToys);
         Toys toys = factory.createToys();
-        lutin.notif();
+//        lutin.notif();
         return toys;
     }
 
